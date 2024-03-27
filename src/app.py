@@ -2,8 +2,8 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-todos = [ {"label": "My first task", "done": False}]
-todos = [ {"label": "My second task", "done": False}]
+todos = [ {"label": "My First task", "done": False}]
+todos = [ {"label": "My Second task", "done": False}]
 
 @app.route('/todos', methods=['POST'])
 def add_new_todo():
